@@ -1,0 +1,27 @@
+---
+import MainLayout from '@/layouts/MainLayout.astro';
+import Navbar from '@/components/base/Navbar.vue';
+import BlogDetail from '@/components/blog/BlogDetail.vue';
+import Footer from '@/components/base/Footer.vue';
+import WhatsAppFloat from '@/components/base/WhatsAppFloat.vue';
+import blogPosts from '@/data/blogPosts.json';
+
+export function getStaticPaths() {
+  return blogPosts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+---
+
+<MainLayout title={`${post.title} - Amani Laundry Blog`}>
+  <Navbar currentPage="blog" client:load />
+  <main>
+    <div class="h-[72px]"></div>
+    <BlogDetail post={post} client:load />
+  </main>
+  <Footer client:visible />
+  <WhatsAppFloat client:load />
+</MainLayout>

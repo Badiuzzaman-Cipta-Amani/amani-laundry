@@ -1,0 +1,33 @@
+---
+import MainLayout from '@/layouts/MainLayout.astro';
+import Navbar from '@/components/base/Navbar.vue';
+import CalculatorHero from '@/components/calculator/CalculatorHero.vue';
+import CategoryTabs from '@/components/calculator/CategoryTabs.vue';
+import ServiceGrid from '@/components/calculator/ServiceGrid.vue';
+import CartSidebar from '@/components/calculator/CartSidebar.vue';
+import MobileCart from '@/components/calculator/MobileCart.vue';
+import BranchModal from '@/components/calculator/BranchModal.vue';
+import Footer from '@/components/base/Footer.vue';
+import WhatsAppFloat from '@/components/base/WhatsAppFloat.vue';
+---
+
+<MainLayout title="Hitung Biaya - Amani Laundry">
+  <Navbar currentPage="calculator" client:load />
+  <main>
+    <div class="h-[72px]"></div>
+    <CalculatorHero client:visible />
+    <section class="py-10 px-6 max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-[1fr_440px] gap-8">
+        <div>
+          <CategoryTabs client:load />
+          <ServiceGrid client:visible />
+        </div>
+        <CartSidebar client:load />
+      </div>
+    </section>
+  </main>
+  <MobileCart client:load />
+  <BranchModal client:load />
+  <Footer client:visible />
+  <WhatsAppFloat client:load />
+</MainLayout>

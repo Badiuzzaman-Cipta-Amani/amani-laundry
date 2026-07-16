@@ -1,0 +1,8 @@
+[
+  { "id": 1, "name": "Rina S.", "role": "Ibu Rumah Tangga", "rating": 5, "text": "Pelayanan sangat memuaskan! Pakaian bersih, wangi, dan diantar tepat waktu. Antar jemputnya gratis pula. Recommended banget!" },
+  { "id": 2, "name": "Budi K.", "role": "Mahasiswa", "rating": 5, "text": "Harga terjangkau untuk mahasiswa. Cuci kiloannya cuma 6rb per kg. Hasilnya bersih dan tidak ada yang hilang. Amani Laundry is the best!" },
+  { "id": 3, "name": "Dewi M.", "role": "Karyawan Swasta", "rating": 5, "text": "Saya langganan di sini karena pelayanannya cepat dan profesional. Setrikaannya rapi banget. Terima kasih Amani Laundry!" },
+  { "id": 4, "name": "Ahmad F.", "role": "Pengusaha", "rating": 5, "text": "Sebagai orang sibuk, layanan antar jemput ini sangat membantu. Tinggal chat WA, timnya langsung datang. Praktis dan efisien!" },
+  { "id": 5, "name": "Siti N.", "role": "Ibu Rumah Tangga", "rating": 5, "text": "Bedcover dan selimut saya dicuci dengan sangat bersih. Wanginya tahan lama. Pasti akan langganan terus di Amani Laundry." },
+  { "id": 6, "name": "Rudi H.", "role": "Pegawai Negeri", "rating": 5, "text": "Sepatu saya yang kotor parah bisa bersih kembali setelah dicuci di sini. Pelayanan ramah dan hasil memuaskan!" }
+]

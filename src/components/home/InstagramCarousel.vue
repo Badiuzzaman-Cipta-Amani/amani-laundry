@@ -3,7 +3,7 @@
     <div class="text-center mb-16">
       <div class="inline-block bg-amani-blue/8 text-amani-blue px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4">Instagram</div>
       <h2 class="text-4xl font-extrabold text-slate-800 mb-4">Ikuti Kami di Instagram</h2>
-      <p class="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">@amanilaundry — Lihat update terbaru, promo menarik, dan tips laundry langsung dari feed kami.</p>
+      <p class="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">Lihat update terbaru, promo menarik, tips laundry, dan semua yang kami lakukan di feed kami.</p>
     </div>
     <div class="relative pb-6">
       <button @click="scrollInsta(-1)" class="insta-nav-btn absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 z-10 hidden md:flex" style="left:-20px;">

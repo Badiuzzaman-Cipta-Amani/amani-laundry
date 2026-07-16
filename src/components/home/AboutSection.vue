@@ -2,13 +2,10 @@
   <section class="py-24 px-6 bg-slate-50" id="about">
     <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
       <div class="relative">
-        <div class="rounded-3xl overflow-hidden shadow-2xl shadow-amani-blue/20 bg-linear-to-br from-indigo-100 to-blue-100 relative h-[400px]">
-          <img src="https://images.unsplash.com/photo-1545173168-9f1947eebb8c?w=600&h=400&fit=crop" alt="Laundry" class="w-full h-full object-cover relative z-10" onerror="this.style.display='none'">
-          <div class="absolute inset-0 flex items-center justify-center z-0">
-            <span class="text-6xl">🧺</span>
-          </div>
+        <div class="rounded-3xl overflow-hidden shadow-2xl shadow-amani-blue/20 bg-linear-to-br from-indigo-100 to-blue-100 relative h-100">
+          <img src="/images/why-choose-us.webp" alt="Foto seorang perempuan sedang packing pakaian setelah menyetrika" class="w-full h-full object-cover relative z-10">
         </div>
-        <div class="relative lg:absolute -mt-12 lg:mt-0 lg:-bottom-12 lg:-right-8 mx-auto lg:mx-0 bg-white rounded-2xl p-6 shadow-2xl max-w-[280px] z-20">
+        <div class="relative lg:absolute -mt-12 lg:mt-0 lg:-bottom-12 lg:-right-8 mx-auto lg:mx-0 bg-white rounded-2xl p-6 shadow-2xl max-w-70 z-20">
           <div class="grid grid-cols-2 gap-5">
             <div><h4 class="text-3xl font-extrabold text-amani-blue">5+</h4><p class="text-xs text-slate-500 mt-1">Tahun Beroperasi</p></div>
             <div><h4 class="text-3xl font-extrabold text-amani-blue">5K+</h4><p class="text-xs text-slate-500 mt-1">Pelanggan Puas</p></div>

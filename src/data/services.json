@@ -5,6 +5,6 @@
   { "id": 4, "name": "Cuci Bantal", "icon": "🛌", "desc": "Pembersihan bantal dengan hasil maksimal dan higienis.", "price": "Rp 15.000", "unit": "pcs", "hasRange": false, "bgClass": "bg-pink-100" },
   { "id": 5, "name": "Cuci Selimut", "icon": "🛏️", "desc": "Pembersihan selimut dan bedcover dengan hasil maksimal.", "price": "Rp 15.000", "unit": "pcs", "hasRange": true, "bgClass": "bg-indigo-100" },
   { "id": 6, "name": "Cuci Bedcover", "icon": "🛌", "desc": "Layanan khusus untuk bedcover berbagai ukuran.", "price": "Rp 18.000", "unit": "pcs", "hasRange": true, "bgClass": "bg-orange-100" },
-  { "id": 7, "name": "Cuci Boneka", "icon": "🧸", "desc": "Pembersihan boneka kesayangan dengan lembut dan aman.", "price": "Rp 5.000", "unit": "pcs", "hasRange": true, "bgClass": "bg-teal-100" },
-  { "id": 8, "name": "Cuci Handuk", "icon": "🧖", "desc": "Pembersihan handuk dengan deterjen khusus.", "price": "Rp 3.000", "unit": "pcs", "hasRange": false, "bgClass": "bg-purple-100" }
+  { "id": 7, "name": "Cuci Handuk", "icon": "🧖", "desc": "Pembersihan handuk dengan deterjen khusus.", "price": "Rp 3.000", "unit": "pcs", "hasRange": false, "bgClass": "bg-purple-100" },
+  { "id": 8, "name": "Anti Noda", "icon": "🦠", "desc": "Menghilangkan noda membandel agar pakaianmu terlihat seperti baru lagi", "price": "Rp 4.000", "unit": "pcs", "hasRange": false, "bgClass": "bg-purple-100" }
 ]

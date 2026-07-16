@@ -2,8 +2,8 @@
   <section class="py-24 px-6 max-w-7xl mx-auto" id="branches">
     <div class="text-center mb-16">
       <div class="inline-block bg-amani-blue/8 text-amani-blue px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4">Lokasi Kami</div>
-      <h2 class="text-4xl font-extrabold text-slate-800 mb-4">Cabang Amani Laundry</h2>
-      <p class="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">Kunjungi cabang terdekat atau pesan layanan antar jemput dari lokasi Anda.</p>
+      <h2 class="text-4xl font-extrabold text-slate-800 mb-4">Temui kami di tempat terdekatmu</h2>
+      <p class="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">Kami terus berupaya mengembangkan Amani Laundry agar mudah diakses oleh siapapun.</p>
     </div>
     <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
       <div v-for="branch in branches" :key="branch.id" class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:-translate-y-1 hover:shadow-2xl hover:shadow-amani-blue/10 transition-all">

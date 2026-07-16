@@ -2,14 +2,14 @@
   <section class="min-h-screen flex items-center justify-center relative bg-[url('/images/hero.webp')] bg-cover bg-center bg-no-repeat overflow-hidden hero-pattern">
     <div class="relative z-10 max-w-4xl mx-auto px-6 pt-28 pb-20 text-center">
       <div class="inline-flex items-center gap-2 bg-amani-yellow/15 border border-amani-yellow/30 text-amani-yellow px-5 py-2 rounded-full text-sm font-semibold mb-6">✨ Laundry Antar Jemput #1</div>
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-5">Laundry Berkualitas,<br><span class="text-amani-yellow">Tanpa Ribet!</span></h1>
-      <p class="text-base sm:text-lg text-white/80 leading-relaxed mb-9 max-w-2xl mx-auto">Amani Laundry hadir dengan layanan antar jemput gratis, harga terjangkau, dan hasil bersih maksimal. Pesan sekarang, kami yang datang!</p>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-5">Solusi Hidup Santai<br><span class="text-amani-yellow">Anda</span></h1>
+      <p class="text-base sm:text-lg text-white/80 leading-relaxed mb-9 max-w-2xl mx-auto">Amani Laundry adalah layanan laundry profesional di kota Sukabumi, hadir dengan layanan antar jemput gratis, harga terjangkau, dan hasil bersih maksimal. Pesan sekarang, selesai dalam 8 jam!</p>
       <div class="flex flex-wrap gap-4 justify-center">
-        <a href="https://wa.me/6285719273592" target="_blank" class="bg-amani-yellow text-amani-blue-dark px-8 py-4 rounded-xl font-bold text-base inline-flex items-center gap-2.5 hover:-translate-y-0.5 transition-all shadow-lg shadow-amani-yellow/30 no-underline">
-          <span>💬</span> Chat Admin WhatsApp
+        <a href="#services" class="bg-amani-yellow text-amani-blue-dark px-8 py-4 rounded-xl font-bold text-base inline-flex items-center gap-2.5 hover:-translate-y-0.5 transition-all shadow-lg shadow-amani-yellow/30 no-underline">
+          Cari tau tentang kami
         </a>
         <a href="/calculator" class="bg-white/10 text-white px-8 py-4 rounded-xl font-semibold text-base inline-flex items-center gap-2.5 border border-white/20 hover:bg-white/20 hover:-translate-y-0.5 transition-all no-underline">
-          <span>🧮</span> Hitung Biaya Laundry
+          <span>🧮</span> Hitung Estimasi Laundry
         </a>
       </div>
     </div>
@@ -17,29 +17,29 @@
     <div class="hidden md:block absolute top-[15%] left-[5%] bg-white rounded-2xl p-5 shadow-xl items-center gap-3 float-animation z-20">
       <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center text-xl">⚡</div>
       <div>
-        <h4 class="text-sm font-bold text-slate-800">Express 6 Jam</h4>
-        <p class="text-xs text-slate-500">Cuci kilat super cepat</p>
+        <h4 class="text-md font-bold text-slate-800">Kilat 8 Jam</h4>
+        <p class="text-sm text-slate-500">Cuci kilat super cepat</p>
       </div>
     </div>
     <div class="hidden md:block absolute top-[25%] right-[8%] bg-white rounded-2xl p-5 shadow-xl items-center gap-3 float-animation-2 z-20" style="animation-delay:0.8s">
       <div class="w-10 h-10 bg-yellow-100 rounded-xl flex items-center justify-center text-xl">🚚</div>
       <div>
-        <h4 class="text-sm font-bold text-slate-800">Gratis Antar Jemput</h4>
-        <p class="text-xs text-slate-500">Untuk area tertentu</p>
+        <h4 class="text-md font-bold text-slate-800">Gratis Antar Jemput</h4>
+        <p class="text-sm text-slate-500">Untuk area tertentu</p>
       </div>
     </div>
     <div class="hidden md:block absolute bottom-[20%] left-[10%] bg-white rounded-2xl p-5 shadow-xl items-center gap-3 float-animation-3 z-20" style="animation-delay:1.5s">
       <div class="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center text-xl">🧺</div>
       <div>
-        <h4 class="text-sm font-bold text-slate-800">5.000+</h4>
-        <p class="text-xs text-slate-500">Pelanggan Puas</p>
+        <h4 class="text-md font-bold text-slate-800">1.000+</h4>
+        <p class="text-sm text-slate-500">Pelanggan Puas</p>
       </div>
     </div>
     <div class="hidden md:block absolute bottom-[30%] right-[5%] bg-white rounded-2xl p-5 shadow-xl items-center gap-3 float-animation z-20" style="animation-delay:2.2s">
       <div class="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center text-xl">⭐</div>
       <div>
-        <h4 class="text-sm font-bold text-slate-800">99% Puas</h4>
-        <p class="text-xs text-slate-500">Tingkat kepuasan</p>
+        <h4 class="text-md font-bold text-slate-800">99% Puas</h4>
+        <p class="text-sm text-slate-500">Tingkat kepuasan</p>
       </div>
     </div>
   </section>

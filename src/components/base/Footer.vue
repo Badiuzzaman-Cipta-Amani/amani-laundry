@@ -2,7 +2,8 @@
   <footer class="bg-amani-blue-dark text-white pt-20 pb-10 px-6">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-10">
       <div class="lg:col-span-1">
-        <h3 class="text-2xl font-extrabold mb-4 flex items-center gap-3">🛵 Amani Laundry</h3>
+        <img src="/images/logo.svg" alt="Logo Amani Laundry" class="w-26 mb-4">
+        <h3 class="text-2xl font-extrabold mb-4 flex items-center gap-3">Amani Laundry</h3>
         <p class="text-white/70 text-sm leading-relaxed mb-5">Laundry antar jemput terpercaya dengan layanan berkualitas, harga terjangkau, dan hasil bersih maksimal. Kepuasan Anda adalah prioritas kami.</p>
         <div class="flex gap-3">
           <a href="#" class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-white hover:bg-amani-yellow hover:text-amani-blue-dark transition-all no-underline">

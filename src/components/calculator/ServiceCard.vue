@@ -1,3 +1,14 @@
+<script setup>
+import { calculatorStore } from '@/stores/calculator';
+import QuantityControl from './QuantityControl.vue';
+
+defineProps({
+  item: Object
+});
+
+const store = calculatorStore;
+</script>
+
 <template>
   <div
     class="product-card bg-white border border-slate-200 rounded-2xl overflow-hidden cursor-pointer relative"
@@ -41,21 +52,10 @@
       </div>
 
       <div v-if="item.id === 'add_noda'" class="mb-3 text-[10px] text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-2.5 py-1.5 leading-tight">
-        <strong>Catatan:</strong> Untuk item dihitung per KG, harap hitung manual jumlah itemnya.
+        <strong>Catatan:</strong> Untuk layanan yang dihitung per KG, harap hitung mandiri jumlah itemnya.
       </div>
 
       <QuantityControl :item="item" />
     </div>
   </div>
 </template>
-
-<script setup>
-import { calculatorStore } from '@/stores/calculator';
-import QuantityControl from './QuantityControl.vue';
-
-defineProps({
-  item: Object
-});
-
-const store = calculatorStore;
-</script>

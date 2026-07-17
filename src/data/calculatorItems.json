@@ -52,7 +52,6 @@
     "name": "Harga Satuan",
     "icon": "🧾",
     "items": [
-      { "id": "hs_sepatu", "name": "Sepatu", "icon": "👟", "note": "Per pasang", "price": 10000, "unit": "pcs", "bgClass": "bg-blue-100", "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=300&fit=crop" },
       { "id": "hs_handuk", "name": "Handuk", "icon": "🧖", "note": "Per pcs", "price": 3000, "unit": "pcs", "bgClass": "bg-blue-100", "image": "https://images.unsplash.com/photo-1616627547584-bf28cee262db?w=400&h=300&fit=crop" },
       { "id": "hs_handuk_kecil", "name": "Handuk Kecil", "icon": "🧖", "note": "Per pcs", "price": 2000, "unit": "pcs", "bgClass": "bg-green-100", "image": "https://images.unsplash.com/photo-1571781926291-c477eb834024?w=400&h=300&fit=crop" },
       { "id": "hs_kaos_kaki", "name": "Kaos Kaki", "icon": "🧦", "note": "Per pcs", "price": 500, "unit": "pcs", "bgClass": "bg-yellow-100", "image": "https://images.unsplash.com/photo-1589810635657-8f12489d0e34?w=400&h=300&fit=crop" },
@@ -66,7 +65,7 @@
       { "id": "hs_tas_gunung", "name": "Tas Gunung", "icon": "🎒", "note": "Per pcs", "price": 5000, "unit": "pcs", "bgClass": "bg-green-100", "image": "https://images.unsplash.com/photo-1501554728187-ce583f396d55?w=400&h=300&fit=crop" },
       { "id": "hs_sajadah_tipis", "name": "Sajadah Tipis", "icon": "🕌", "note": "Per pcs", "price": 5000, "unit": "pcs", "bgClass": "bg-yellow-100", "image": "https://images.unsplash.com/photo-1564121211835-e88c852648ab?w=400&h=300&fit=crop" },
       { "id": "hs_sajadah_tebal", "name": "Sajadah Tebal", "icon": "🕌", "note": "Per pcs", "price": 7000, "unit": "pcs", "bgClass": "bg-orange-100", "image": "https://images.unsplash.com/photo-1604147495798-57beb6d27f3e?w=400&h=300&fit=crop" },
-      { "id": "hs_kerudung", "name": "Kerudung", "icon": "🧕", "note": "Per pcs", "price": 3000, "unit": "pcs", "bgClass": "bg-red-100", "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=400&h=300&fit=crop" },
+      { "id": "hs_penutup_kepala", "name": "Penutup Kepala", "icon": "🧕", "note": "Per pcs", "price": 3000, "unit": "pcs", "bgClass": "bg-red-100", "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=400&h=300&fit=crop" },
       { "id": "hs_sandal", "name": "Sandal", "icon": "🩴", "note": "Per pcs", "price": 10000, "unit": "pcs", "bgClass": "bg-purple-100", "image": "https://images.unsplash.com/photo-1603487742131-4160ec9996a7?w=400&h=300&fit=crop" },
       { "id": "hs_sarung_bantal", "name": "Sarung Bantal/Guling", "icon": "🛌", "note": "Per pcs", "price": 1000, "unit": "pcs", "bgClass": "bg-pink-100", "image": "https://images.unsplash.com/photo-1629949009765-40fc74c9ec21?w=400&h=300&fit=crop" },
       { "id": "hs_keset", "name": "Keset", "icon": "🧹", "note": "Per pcs", "price": 4000, "unit": "pcs", "bgClass": "bg-teal-100", "image": "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=400&h=300&fit=crop" },

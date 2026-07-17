@@ -15,10 +15,10 @@
             <p class="text-slate-400 text-sm">Belum ada layanan yang dipilih</p>
             <p class="text-slate-300 text-xs mt-1">Klik gambar layanan untuk menambahkan</p>
           </div>
-          <div v-else class="space-y-3 max-h-[400px] overflow-y-auto pr-1">
+          <div v-else class="space-y-3 max-h-100 overflow-y-auto pr-1">
             <div v-for="item in store.cartItems" :key="item.id" class="p-4 bg-slate-50 rounded-xl">
               <div class="flex items-start gap-3 mb-3">
-                <div class="w-14 h-14 rounded-xl bg-slate-200 flex-shrink-0 overflow-hidden border border-slate-100">
+                <div class="w-14 h-14 rounded-xl bg-slate-200 shrink-0 overflow-hidden border border-slate-100">
                   <img :src="item.image" :alt="item.name" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.classList.add('flex','items-center','justify-center','bg-slate-100')">
                   <div v-if="!item.image" class="w-full h-full flex items-center justify-center text-lg">{{ item.icon }}</div>
                 </div>
@@ -62,7 +62,7 @@
           </div>
 
           <div class="mt-4 bg-blue-50 rounded-xl p-3 flex items-start gap-2">
-            <svg class="w-4 h-4 text-amani-blue flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <svg class="w-4 h-4 text-amani-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             <p class="text-[11px] text-slate-500 leading-relaxed">Harga belum termasuk biaya antar jemput. Biaya pengiriman akan dihitung saat pemesanan.</p>
           </div>
 

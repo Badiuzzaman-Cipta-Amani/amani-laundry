@@ -1,10 +1,10 @@
 <template>
   <div>
     <!-- Mobile Cart Overlay -->
-    <div class="cart-overlay fixed inset-0 bg-black/50 z-[9999] lg:hidden" :class="{'open': store.mobileCartOpen}" @click="store.mobileCartOpen = false"></div>
+    <div class="cart-overlay fixed inset-0 bg-black/50 z-9999 lg:hidden" :class="{'open': store.mobileCartOpen}" @click="store.mobileCartOpen = false"></div>
 
     <!-- Mobile Cart Drawer -->
-    <div class="cart-drawer fixed bottom-0 left-0 right-0 bg-white rounded-t-3xl shadow-2xl z-[10000] lg:hidden max-h-[80vh] overflow-y-auto" :class="{'open': store.mobileCartOpen}">
+    <div class="cart-drawer fixed bottom-0 left-0 right-0 bg-white rounded-t-3xl shadow-2xl z-10000 lg:hidden max-h-[80vh] overflow-y-auto" :class="{'open': store.mobileCartOpen}">
       <div class="sticky top-0 bg-white rounded-t-3xl px-6 pt-5 pb-3 border-b border-slate-100 z-10">
         <div class="w-12 h-1.5 bg-slate-200 rounded-full mx-auto mb-4"></div>
         <div class="flex items-center justify-between">
@@ -23,7 +23,7 @@
         <div v-else class="space-y-3">
           <div v-for="item in store.cartItems" :key="item.id" class="p-4 bg-slate-50 rounded-xl">
             <div class="flex items-start gap-3 mb-3">
-              <div class="w-14 h-14 rounded-xl bg-slate-200 flex-shrink-0 overflow-hidden border border-slate-100">
+              <div class="w-14 h-14 rounded-xl bg-slate-200 shrink-0 overflow-hidden border border-slate-100">
                 <img :src="item.image" :alt="item.name" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.classList.add('flex','items-center','justify-center','bg-slate-100')">
                 <div v-if="!item.image" class="w-full h-full flex items-center justify-center text-lg">{{ item.icon }}</div>
               </div>
@@ -58,7 +58,7 @@
             <span class="text-amani-blue">{{ store.formatPrice(store.totalPrice) }}</span>
           </div>
           <div class="mt-3 bg-blue-50 rounded-xl p-3 flex items-start gap-2">
-            <svg class="w-4 h-4 text-amani-blue flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <svg class="w-4 h-4 text-amani-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             <p class="text-[11px] text-slate-500 leading-relaxed">Harga belum termasuk biaya antar jemput. Biaya pengiriman akan dihitung saat pemesanan.</p>
           </div>
         </div>
@@ -73,7 +73,7 @@
     </div>
 
     <!-- Mobile Floating Cart Button -->
-    <div class="lg:hidden fixed bottom-6 left-6 z-[60]">
+    <div class="lg:hidden fixed bottom-6 left-6 z-60">
       <button @click="store.mobileCartOpen = true" class="flex items-center gap-2.5 bg-amani-blue text-white pl-4 pr-5 py-3.5 rounded-full shadow-2xl hover:-translate-y-0.5 transition-all cursor-pointer">
         <span class="text-xl">🧾</span>
         <div class="text-left">

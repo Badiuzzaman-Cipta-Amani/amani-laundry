@@ -1,6 +1,14 @@
-import { reactive, computed } from 'vue';
+import { reactive } from 'vue';
 import calculatorItems from '@/data/calculatorItems.json';
 import branches from '@/data/branches.json';
+
+const ITEMS_NOT_INCREMENTED_BY_SERVICES = [
+  "add_noda",
+  "hs_kaos_kaki",
+  "hs_dalaman",
+  "hs_ciput",
+  "hs_sarung_tangan",
+]
 
 function findItemById(id) {
   for (const cat of calculatorItems) {
@@ -12,12 +20,7 @@ function findItemById(id) {
 }
 
 function _getItemPrice(item, category) {
-  if (category === 'regular') return item.price;
-  if (item.id === 'hs_sepatu') {
-    if (category === 'express') return 20000;
-    if (category === 'kilat') return 30000;
-    return item.price;
-  }
+  if (category === 'regular' || ITEMS_NOT_INCREMENTED_BY_SERVICES.includes(item.id)) return item.price;
   if (item.unit === 'kg') {
     if (category === 'express') {
       if (item.id === 'ck') return 8000;
@@ -102,6 +105,7 @@ export const calculatorStore = reactive({
     } else {
       newQty = Math.max(0, current + delta);
     }
+    console.log(id, delta, newQty)
     this.quantities[id] = newQty;
   },
 

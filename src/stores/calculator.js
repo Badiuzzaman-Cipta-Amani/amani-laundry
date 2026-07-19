@@ -2,14 +2,6 @@ import { reactive } from 'vue';
 import calculatorItems from '@/data/calculatorItems.json';
 import branches from '@/data/branches.json';
 
-const ITEMS_NOT_INCREMENTED_BY_SERVICES = [
-  "add_noda",
-  "hs_kaos_kaki",
-  "hs_dalaman",
-  "hs_ciput",
-  "hs_sarung_tangan",
-]
-
 function findItemById(id) {
   for (const cat of calculatorItems) {
     for (const item of cat.items) {
@@ -20,7 +12,7 @@ function findItemById(id) {
 }
 
 function _getItemPrice(item, category) {
-  if (category === 'regular' || ITEMS_NOT_INCREMENTED_BY_SERVICES.includes(item.id)) return item.price;
+  if (category === 'regular' || item.price <= 1000 || item.id === 'add_noda') return item.price;
   if (item.unit === 'kg') {
     if (category === 'express') {
       if (item.id === 'ck') return 8000;

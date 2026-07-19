@@ -1,10 +1,18 @@
+<script setup>
+import { ref } from 'vue';
+import instaPosts from '@/data/instagram.json';
+
+const instaCarousel = ref(null);
+
+function scrollInsta(direction) {
+  if (!instaCarousel.value) return;
+  const cardWidth = 320 + 20;
+  instaCarousel.value.scrollBy({ left: direction * cardWidth * 3, behavior: 'smooth' });
+}
+</script>
+
 <template>
-  <section class="py-24 px-6 max-w-7xl mx-auto" id="instagram">
-    <div class="text-center mb-16">
-      <div class="inline-block bg-amani-blue/8 text-amani-blue px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4">Instagram</div>
-      <h2 class="text-4xl font-extrabold text-slate-800 mb-4">Ikuti Kami di Instagram</h2>
-      <p class="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">Lihat update terbaru, promo menarik, tips laundry, dan semua yang kami lakukan di feed kami.</p>
-    </div>
+  <div>
     <div class="relative pb-6">
       <button @click="scrollInsta(-1)" class="insta-nav-btn absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 z-10 hidden md:flex" style="left:-20px;">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
@@ -12,8 +20,8 @@
       <button @click="scrollInsta(1)" class="insta-nav-btn absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 z-10 hidden md:flex" style="right:-20px;">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
       </button>
-      <div ref="instaCarousel" class="insta-carousel flex gap-5 overflow-x-auto pb-6">
-        <div v-for="(post, idx) in instaPosts" :key="idx" class="insta-card w-[280px] sm:w-[320px] bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all cursor-pointer group">
+      <div ref="instaCarousel" class="insta-carousel flex gap-5 overflow-x-auto pb-12 scrollbar-none">
+        <div v-for="(post, idx) in instaPosts" :key="idx" class="insta-card w-70 sm:w-[320px] bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all cursor-pointer group">
           <div class="aspect-square bg-linear-to-br from-indigo-100 to-blue-100 relative overflow-hidden">
             <img :src="post.image" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.style.display='none'; this.parentElement.classList.add('flex','items-center','justify-center')">
             <div class="absolute top-3 left-3 flex items-center gap-1.5 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1.5">
@@ -44,18 +52,5 @@
         Lihat di Instagram
       </a>
     </div>
-  </section>
+  </div>
 </template>
-
-<script setup>
-import { ref } from 'vue';
-import instaPosts from '@/data/instagram.json';
-
-const instaCarousel = ref(null);
-
-function scrollInsta(direction) {
-  if (!instaCarousel.value) return;
-  const cardWidth = 320 + 20;
-  instaCarousel.value.scrollBy({ left: direction * cardWidth * 3, behavior: 'smooth' });
-}
-</script>

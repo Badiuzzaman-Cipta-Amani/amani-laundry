@@ -6,7 +6,7 @@
     "groups": ["type", "external", ["index", "sibling"], "internal"]
   },
   "sortTailwindcss": {
-    "stylesheet": "./app/assets/css/main.css",
+    "stylesheet": "./src/styles/main.css",
     "attributes": ["class"],
     "functions": ["clsx", "cn"],
     "preserveDuplicates": false,

@@ -6,10 +6,14 @@ import CopyButton from "@/components/base/button/CopyButton.vue";
 import BlogCard from "@/components/blog/BlogCard.vue";
 import Footer from "@/components/base/Footer.astro";
 import blogPosts from "@/data/blogPosts.json";
+import { getCollection } from "astro:content";
+import { render } from "astro:content";
+import { formatDate } from "@/utils/date";
 
-export const getStaticPaths = () => {
-  return blogPosts.map((post) => ({
-    params: { slug: post.slug },
+export const getStaticPaths = async () => {
+  const blogs = await getCollection("blogs");
+  return blogs.map((post) => ({
+    params: { slug: post.id },
     props: { post },
   }));
 };
@@ -17,53 +21,58 @@ export const getStaticPaths = () => {
 const { post } = Astro.props;
 
 const countWords = () => {
-  const text = post.content.replace(/<[^>]*>/g, "");
+  if (!post.body) return 0;
+  const text = post.body.replace(/<[^>]*>/g, "");
   return text.trim().split(/\s+/).length;
 };
 
 const readingTime = Math.max(1, Math.ceil(countWords() / 200));
 
-const recommendedPosts = (() => {
-  return blogPosts.filter((p) => p.id !== post.id).slice(0, 3);
-})();
+// const recommendedPosts = (() => {
+//   return blogPosts.filter((p) => p.id !== post.id).slice(0, 3);
+// })();
+
+const { Content } = await render(post);
 ---
 
 <MainLayout
-  title={`${post.title}`}
-  description={post.excerpt}
-  ogImage={post.image}
+  title={`${post.data.title}`}
+  description={post.data.excerpt}
+  ogImage={post.data.cover}
 >
-  <Navbar currentPage="blog" />
+  <Navbar currentPage="blogs" />
   <main>
-    <div class="h-18"></div>
-    <article class="py-24 px-6 max-w-3xl mx-auto">
+    <article class="mt-5 py-24 px-6 max-w-3xl mx-auto">
       <header>
         <div class="text-center mb-10">
           <div class="flex items-center justify-center gap-4 mb-5">
             <div
               class="bg-amani-yellow text-amani-blue-dark px-4 py-1.5 rounded-full text-xs font-bold"
             >
-              {post.categoryLabel}
+              {post.data.category}
             </div>
-            <div class="text-sm text-slate-500">{post.date}</div>
           </div>
           <h1
             class="text-4xl lg:text-5xl font-extrabold text-slate-800 leading-tight mb-4"
           >
-            {post.title}
+            {post.data.title}
           </h1>
           <div
             class="flex items-center justify-center gap-4 text-sm text-slate-500"
           >
-            <span>⏱️ {readingTime} menit baca</span>
+            <span>⏱️ {readingTime} menit baca</span> | <div
+              class="text-sm text-slate-500"
+            >
+              {formatDate(post.data.date)}
+            </div>
           </div>
         </div>
         <div
-          class="w-full h-96 rounded-2xl overflow-hidden mb-10 bg-linear-to-br from-indigo-100 to-blue-100"
+          class="w-full min-h-96 rounded-2xl overflow-hidden mb-10 bg-linear-to-br from-indigo-100 to-blue-100"
         >
           <img
-            src={post.image}
-            alt={post.title}
+            src={post.data.cover}
+            alt={post.data.title}
             class="w-full h-full object-cover"
             onerror="this.style.display='none'; this.parentElement.classList.add('bg-linear-to-br', 'from-indigo-100', 'to-blue-100')"
           />
@@ -74,16 +83,18 @@ const recommendedPosts = (() => {
         <ShareButton client:load post={post} />
         <CopyButton client:load copyText={Astro.url.href} />
       </div>
-      <div class="blog-content" set:html={post.content} />
+      <div class="blog-content">
+        <Content />
+      </div>
     </article>
-    <section class="py-16 px-6 bg-slate-50" v-if="post">
+    <!-- <section class="py-16 px-6 bg-slate-50" v-if="post">
       <div class="max-w-7xl mx-auto">
         <h3 class="text-2xl font-bold text-slate-800 mb-6">Artikel Lainnya</h3>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {recommendedPosts.map((rec) => <BlogCard client:load post={rec} />)}
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
   <Footer />
 </MainLayout>

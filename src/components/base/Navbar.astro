@@ -30,9 +30,9 @@ const { currentPage } = Astro.props;
           Beranda
         </a>
         <a
-          href="/blog"
+          href="/blogs"
           class={`text-sm font-medium transition-colors no-underline ${
-            currentPage === "blog"
+            currentPage === "blogs"
               ? "text-amani-blue"
               : "text-slate-700 hover:text-amani-blue"
           }`}
@@ -67,9 +67,9 @@ const { currentPage } = Astro.props;
       Beranda
     </a>
     <a
-      href="/blog"
+      href="/blogs"
       class={`block py-3.5 font-semibold border-b border-slate-100 no-underline transition-colors mt-1 rounded-lg px-3 ${
-        currentPage === "blog"
+        currentPage === "blogs"
           ? "text-amani-blue bg-amani-blue/5"
           : "text-slate-800 hover:text-amani-blue hover:bg-slate-50"
       }`}

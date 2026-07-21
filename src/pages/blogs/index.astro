@@ -3,23 +3,20 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import Navbar from "@/components/base/Navbar.astro";
 import BlogList from "@/components/blog/BlogList.vue";
 import Footer from "@/components/base/Footer.astro";
+import { getCollection } from "astro:content";
 
 const title = "Tips & Artikel";
 const description =
   "Temukan tips merawat pakaian, informasi layanan, dan promo menarik dari Amani Laundry.";
+
+const blogs = await getCollection("blogs");
 ---
 
 <MainLayout title={title} description={description}>
-  <Navbar currentPage="blog" />
+  <Navbar currentPage="blogs" />
   <main>
-    <div class="h-18"></div>
-    <header class="py-24 px-6 max-w-7xl mx-auto">
+    <header class="mt-8 pt-24 px-6 max-w-7xl mx-auto">
       <div class="text-center mb-16">
-        <div
-          class="inline-block bg-amani-blue/8 text-amani-blue px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4"
-        >
-          Blog
-        </div>
         <h1 class="text-4xl font-extrabold text-slate-800 mb-4">
           {title}
         </h1>
@@ -28,7 +25,7 @@ const description =
         </p>
       </div>
     </header>
-    <section class="py-24 px-6 max-w-7xl mx-auto">
+    <section class="pb-24 px-6 max-w-7xl mx-auto">
       <BlogList client:load />
     </section>
   </main>

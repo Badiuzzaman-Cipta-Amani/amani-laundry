@@ -2,46 +2,44 @@
 import testimonials from "@/data/testimonials.json";
 ---
 
-<template>
-  <section class="py-24 px-6 bg-slate-50">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16">
-        <div
-          class="inline-block bg-amani-blue/8 text-amani-blue px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4"
-        >
-          Testimoni
-        </div>
-        <h2 class="text-4xl font-extrabold text-slate-800 mb-4">
-          Dengarkan apa yang orang lain katakan
-        </h2>
-        <p class="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
-          Ribuan pelanggan telah mempercayakan cucian mereka pada Amani Laundry.
-        </p>
+<section class="py-24 px-6 bg-slate-50">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <div
+        class="inline-block bg-amani-blue/8 text-amani-blue px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4"
+      >
+        Testimoni
       </div>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {
-          testimonials.map((t) => (
-            <div class="bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-2xl hover:shadow-amani-blue/5 transition-all">
-              <div class="text-amani-yellow text-xl mb-4">
-                {"⭐".repeat(t.rating)}
-              </div>
-              <p class="text-base text-slate-800 leading-relaxed mb-6">
-                "{t.text}"
-              </p>
-              <div class="flex items-center gap-3.5">
-                <div class="w-12 h-12 rounded-full bg-linear-to-br from-amani-blue to-amani-blue-light flex items-center justify-center text-white font-bold text-lg">
-                  {t.name.charAt(0)}
-                </div>
-                <a href={t.link} target="_blank">
-                  <h4 class="text-sm font-bold text-slate-800 hover:underline">
-                    {t.name}
-                  </h4>
-                </a>
-              </div>
-            </div>
-          ))
-        }
-      </div>
+      <h2 class="text-4xl font-extrabold text-slate-800 mb-4">
+        Dengarkan apa yang orang lain katakan
+      </h2>
+      <p class="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
+        Ribuan pelanggan telah mempercayakan cucian mereka pada Amani Laundry.
+      </p>
     </div>
-  </section>
-</template>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {
+        testimonials.map((t) => (
+          <div class="bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-2xl hover:shadow-amani-blue/5 transition-all">
+            <div class="text-amani-yellow text-xl mb-4">
+              {"⭐".repeat(t.rating)}
+            </div>
+            <p class="text-base text-slate-800 leading-relaxed mb-6">
+              "{t.text}"
+            </p>
+            <div class="flex items-center gap-3.5">
+              <div class="w-12 h-12 rounded-full bg-linear-to-br from-amani-blue to-amani-blue-light flex items-center justify-center text-white font-bold text-lg">
+                {t.name.charAt(0)}
+              </div>
+              <a href={t.link} target="_blank">
+                <h4 class="text-sm font-bold text-slate-800 hover:underline">
+                  {t.name}
+                </h4>
+              </a>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

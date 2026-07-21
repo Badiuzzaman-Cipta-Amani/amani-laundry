@@ -169,6 +169,7 @@ import WhatsAppFloat from "@/components/base/WhatsAppFloat.astro";
         line-height: 1.85;
         color: #475569;
         margin-bottom: 0.5rem;
+        list-style-type: disc;
       }
       .blog-content strong {
         color: #1e293b;
@@ -181,6 +182,171 @@ import WhatsAppFloat from "@/components/base/WhatsAppFloat.astro";
         font-style: italic;
         color: #64748b;
         font-size: 1.125rem;
+      }
+      .blog-content h1 {
+        font-size: 2.25rem;
+        font-weight: 800;
+        color: #0f172a;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+      }
+      .blog-content h4 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #475569;
+        margin-top: 1.75rem;
+        margin-bottom: 0.75rem;
+        line-height: 1.4;
+      }
+      .blog-content h5 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: #475569;
+        margin-top: 1.5rem;
+        margin-bottom: 0.625rem;
+        line-height: 1.5;
+      }
+      .blog-content h6 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #64748b;
+        margin-top: 1.25rem;
+        margin-bottom: 0.625rem;
+        line-height: 1.5;
+      }
+      .blog-content ol {
+        margin-bottom: 1.5rem;
+        padding-left: 1.75rem;
+        list-style-type: decimal;
+      }
+      .blog-content ol li {
+        font-size: 1.125rem;
+        line-height: 1.85;
+        color: #475569;
+        margin-bottom: 0.5rem;
+      }
+      .blog-content a {
+        color: #1e3a8a;
+        text-decoration: underline;
+        transition: color 0.2s ease;
+        font-weight: 500;
+      }
+      .blog-content a:hover {
+        color: #1e40af;
+        text-decoration-thickness: 2px;
+      }
+      .blog-content img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        margin: 2rem 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      .blog-content em,
+      .blog-content i {
+        font-style: italic;
+        color: #475569;
+      }
+      .blog-content code {
+        background: #f1f5f9;
+        color: #dc2626;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+        font-size: 0.95em;
+        font-weight: 500;
+      }
+      .blog-content pre {
+        background: #1e293b;
+        color: #e2e8f0;
+        padding: 1.5rem;
+        border-radius: 10px;
+        overflow-x: auto;
+        margin: 2rem 0;
+        font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+      .blog-content pre code {
+        background: none;
+        color: #e2e8f0;
+        padding: 0;
+        font-weight: 400;
+      }
+      .blog-content hr {
+        border: none;
+        border-top: 2px solid #e2e8f0;
+        margin: 3rem 0;
+      }
+      .blog-content table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 2rem 0;
+        border: 1px solid #e2e8f0;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .blog-content thead {
+        background: #f1f5f9;
+      }
+      .blog-content th {
+        padding: 1rem;
+        text-align: left;
+        font-weight: 600;
+        color: #1e293b;
+        border-bottom: 2px solid #e2e8f0;
+        font-size: 0.95rem;
+      }
+      .blog-content td {
+        padding: 0.875rem 1rem;
+        border-bottom: 1px solid #e2e8f0;
+        color: #475569;
+        font-size: 1rem;
+      }
+      .blog-content tbody tr:last-child td {
+        border-bottom: none;
+      }
+      .blog-content tbody tr:hover {
+        background: #f8fafc;
+      }
+      .blog-content figure {
+        margin: 2rem 0;
+        padding: 0;
+      }
+      .blog-content figcaption {
+        text-align: center;
+        font-size: 0.95rem;
+        color: #64748b;
+        margin-top: 0.75rem;
+        font-style: italic;
+      }
+      .blog-content sup {
+        font-size: 0.8em;
+        vertical-align: super;
+        color: #1e3a8a;
+      }
+      .blog-content sub {
+        font-size: 0.8em;
+        vertical-align: sub;
+        color: #1e3a8a;
+      }
+      .blog-content kbd {
+        background: #e2e8f0;
+        border: 1px solid #cbd5e1;
+        border-radius: 4px;
+        padding: 2px 6px;
+        font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+        font-size: 0.85em;
+        color: #1e293b;
+        font-weight: 500;
+      }
+      .blog-content mark {
+        background: #fef3c7;
+        color: #92400e;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-weight: 500;
       }
       .share-dropdown {
         opacity: 0;

@@ -33,7 +33,7 @@ defineProps({
       <p class="mb-4 text-sm leading-relaxed text-slate-500">{{ post.excerpt }}</p>
       <div class="flex gap-3">
         <a
-          :href="`/blog/${post.slug}`"
+          :href="`/blogs/${post.slug}`"
           class="flex-1 rounded-xl bg-amani-blue py-2 text-center text-sm font-semibold text-white no-underline transition-colors hover:bg-amani-blue-dark"
         >
           Baca Artikel

@@ -1,15 +1,12 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
 import Navbar from "@/components/base/Navbar.astro";
-import BlogList from "@/components/blog/BlogList.vue";
+import BlogList from "@/components/blog/BlogList.astro";
 import Footer from "@/components/base/Footer.astro";
-import { getCollection } from "astro:content";
 
 const title = "Tips & Artikel";
 const description =
   "Temukan tips merawat pakaian, informasi layanan, dan promo menarik dari Amani Laundry.";
-
-const blogs = await getCollection("blogs");
 ---
 
 <MainLayout title={title} description={description}>
@@ -26,7 +23,7 @@ const blogs = await getCollection("blogs");
       </div>
     </header>
     <section class="pb-24 px-6 max-w-7xl mx-auto">
-      <BlogList client:load />
+      <BlogList />
     </section>
   </main>
   <Footer />

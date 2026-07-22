@@ -1,25 +1,34 @@
 <script setup>
 import { ref, computed } from 'vue';
-import blogPosts from '@/data/blogPosts.json';
 import BlogFilters from './BlogFilters.vue';
 import BlogCard from './BlogCard.vue';
 
+const props = defineProps({
+  posts: {
+    type: Array,
+    required: true,
+  },
+});
+
+const blogPosts = ref(props.posts || []);
 const blogSearch = ref('');
 const blogFilter = ref('all');
 const blogYear = ref('all');
 const postsPerPage = ref(6);
 
 const filteredPosts = computed(() => {
-  let posts = blogPosts;
+  let posts = blogPosts.value;
   if (blogFilter.value !== 'all') {
-    posts = posts.filter(p => p.category === blogFilter.value);
+    posts = posts.filter((p) => p.category === blogFilter.value);
   }
   if (blogYear.value !== 'all') {
-    posts = posts.filter(p => p.year === blogYear.value);
+    posts = posts.filter((p) => p.year === blogYear.value);
   }
   if (blogSearch.value.trim()) {
     const q = blogSearch.value.toLowerCase();
-    posts = posts.filter(p => p.title.toLowerCase().includes(q) || p.excerpt.toLowerCase().includes(q));
+    posts = posts.filter(
+      (p) => p.title.toLowerCase().includes(q) || p.excerpt.toLowerCase().includes(q)
+    );
   }
   return posts;
 });

@@ -20,10 +20,10 @@ const store = calculatorStore;
       <div v-if="!item.image" class="absolute inset-0 flex items-center justify-center text-4xl">{{ item.icon }}</div>
 
       <div class="absolute top-3 left-3">
-        <span class="bg-white/90 backdrop-blur-sm text-amani-blue text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm uppercase tracking-wider">{{ item.unit }}</span>
+        <span class="bg-white/90 backdrop-blur-sm text-amani-blue text-[11px] font-bold px-2.5 py-1 rounded-full shadow-sm uppercase tracking-wider">{{ item.unit }}</span>
       </div>
 
-      <div v-if="(store.quantities[item.id] || 0) > 0" class="absolute top-3 right-3 w-7 h-7 bg-amani-blue text-white rounded-full flex items-center justify-center text-xs font-bold shadow-lg">
+      <div v-if="(store.quantities[item.id] || 0) > 0" class="absolute top-3 right-3 size-7 bg-amani-blue text-white rounded-full flex items-center justify-center text-[11px] font-bold shadow-lg">
         {{ store.formatQty(store.quantities[item.id]) }}
       </div>
     </div>
@@ -32,19 +32,19 @@ const store = calculatorStore;
       <div class="flex items-start justify-between mb-2">
         <div>
           <div class="flex items-center gap-1">
-            <h4 class="text-sm font-bold text-slate-800">{{ item.name }}</h4>
+            <h4 class="text-base font-bold text-slate-800">{{ item.name }}</h4>
             <div v-if="item.id === 'dry'" class="info-popup">
               ℹ️
               <span class="info-popup-text">Cuci Kering (Dry Cleaning) menggunakan pelarut khusus tanpa air, ideal untuk pakaian sensitif seperti jas, kebaya, dan bahan premium.</span>
             </div>
           </div>
-          <p class="text-[11px] text-slate-400 mt-0.5">{{ item.note }}</p>
+          <p class="text-[13px] text-slate-500 mt-0.5">{{ item.note }}</p>
         </div>
       </div>
 
       <div class="flex items-center gap-2 mb-3">
         <span class="text-lg font-extrabold text-amani-blue">{{ store.formatPrice(store.getItemPrice(item)) }}</span>
-        <span class="text-xs text-slate-400">/ {{ item.unit }}</span>
+        <span class="text-sm text-slate-500">/ {{ item.unit }}</span>
       </div>
 
       <div v-if="store.getSurcharge(item) > 0" class="surcharge-badge mb-3 inline-block">

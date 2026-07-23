@@ -1,5 +1,6 @@
 ---
 import services from "@/data/services.json";
+import { ArrowRight } from '@lucide/astro';
 ---
 
 <section class="py-24 px-6 max-w-7xl mx-auto" id="services">
@@ -12,7 +13,7 @@ import services from "@/data/services.json";
     <h2 class="text-4xl font-extrabold text-slate-800 mb-4">
       Beragam layanan laundry<br />hanya untuk anda
     </h2>
-    <p class="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
+    <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
       Amani Laundry hadir memenuhi semua kebutuhan anda dengan cepat.<br />Satu
       mesin, satu customer!
     </p>
@@ -27,12 +28,12 @@ import services from "@/data/services.json";
             {service.icon}
           </div>
           <h3 class="text-lg font-bold text-slate-800 mb-2">{service.name}</h3>
-          <p class="text-sm text-slate-500 leading-relaxed mb-4">
+          <p class="text-sm text-slate-600 leading-relaxed mb-4">
             {service.desc}
           </p>
           <div class="text-lg font-extrabold text-amani-blue">
             {service.price}{" "}
-            <span class="text-xs font-medium text-slate-500">
+            <span class="text-sm font-medium text-slate-600">
               / {service.unit}
             </span>
           </div>
@@ -45,7 +46,7 @@ import services from "@/data/services.json";
       href="/calculator"
       class="inline-flex items-center gap-2 bg-amani-blue text-white px-8 py-4 rounded-xl font-bold text-base hover:bg-amani-blue-dark transition-all no-underline"
     >
-      Lihat Semua Layanan →
+      Lihat Semua Layanan <ArrowRight class="w-4 h-4" />
     </a>
   </div>
 </section>

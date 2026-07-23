@@ -1,5 +1,8 @@
 ---
-import branches from "@/data/branches.json";
+import { branches } from "@/data/common.json";
+import { Whatsapp } from "simple-icons-astro";
+import { Phone, Clock, MapPin } from "@lucide/astro";
+import { formatPhoneNumber } from "@/utils/number";
 ---
 
 <section class="py-24 px-6 max-w-7xl mx-auto" id="branches">
@@ -12,7 +15,7 @@ import branches from "@/data/branches.json";
     <h2 class="text-4xl font-extrabold text-slate-800 mb-4">
       Temui kami di tempat terdekatmu
     </h2>
-    <p class="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
+    <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
       Kami terus berupaya mengembangkan Amani Laundry agar mudah diakses oleh
       siapapun.
     </p>
@@ -34,19 +37,19 @@ import branches from "@/data/branches.json";
           </div>
           <div class="p-6">
             <h3 class="text-lg font-bold text-slate-800 mb-2">{branch.name}</h3>
-            <p class="text-sm text-slate-500 leading-relaxed mb-4">
+            <p class="text-base text-slate-600 leading-relaxed mb-4">
               {branch.address}
             </p>
             <div class="flex gap-4 mb-4 flex-wrap">
               <a
                 href={`https://wa.me/${branch.phone.replace(/\D/g, "")}`}
                 target="_blank"
-                class="flex items-center gap-1.5 text-xs text-slate-500 hover:text-amani-blue transition-colors no-underline"
+                class="flex items-center gap-1.5 text-sm text-slate-600 hover:text-amani-blue transition-colors no-underline"
               >
-                📞 {branch.phone}
+                <Phone class="size-4" /> {formatPhoneNumber(branch.phone)}
               </a>
-              <div class="flex items-center gap-1.5 text-xs text-slate-500">
-                🕐 {branch.hours}
+              <div class="flex items-center gap-1.5 text-sm text-slate-600">
+                <Clock class="size-4" /> {branch.hours}
               </div>
             </div>
             <div class="flex flex-wrap gap-3">
@@ -55,14 +58,14 @@ import branches from "@/data/branches.json";
                 target="_blank"
                 class="inline-flex items-center gap-2 bg-[#25d366] text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-[#128c7e] transition-colors no-underline"
               >
-                💬 Chat Admin
+                <Whatsapp class="size-4" /> Chat Admin
               </a>
               <a
                 href={branch.mapsUrl}
                 target="_blank"
                 class="inline-flex items-center gap-2 bg-amani-blue text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-amani-blue-dark transition-colors no-underline"
               >
-                📍 Buka di Google Maps
+                <MapPin class="size-4" /> Buka di Google Maps
               </a>
             </div>
           </div>

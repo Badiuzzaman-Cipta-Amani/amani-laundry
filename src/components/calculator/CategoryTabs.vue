@@ -10,7 +10,7 @@
         >
           <div class="text-2xl mb-1">🧺</div>
           <div class="text-md font-bold">Reguler</div>
-          <div class="text-[14px] opacity-70 mt-0.5">Selesai 3 Hari</div>
+          <div class="text-[14px] opacity-80 mt-0.5">Selesai 3 Hari</div>
         </button>
         <button
           @click="store.selectedCategory = 'express'"
@@ -19,7 +19,7 @@
         >
           <div class="text-2xl mb-1">⚡</div>
           <div class="text-md font-bold">Express</div>
-          <div class="text-[14px] opacity-70 mt-0.5">Selesai 1 Hari</div>
+          <div class="text-[14px] opacity-80 mt-0.5">Selesai 1 Hari</div>
         </button>
         <button
           @click="store.selectedCategory = 'kilat'"
@@ -28,7 +28,7 @@
         >
           <div class="text-2xl mb-1">🚀</div>
           <div class="text-md font-bold">Kilat</div>
-          <div class="text-[14px] opacity-70 mt-0.5">Selesai 8 Jam!</div>
+          <div class="text-[14px] opacity-80 mt-0.5">Selesai 8 Jam!</div>
         </button>
       </div>
     </div>

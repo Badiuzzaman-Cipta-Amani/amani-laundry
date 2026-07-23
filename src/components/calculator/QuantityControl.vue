@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center justify-between pt-3 border-t border-slate-100">
-    <span class="text-[11px] text-slate-400 font-medium">Jumlah</span>
+    <span class="text-sm text-slate-500 font-medium">Jumlah</span>
     <div class="flex items-center gap-2">
       <button
         class="qty-btn w-8 h-8 rounded-lg border border-slate-200 bg-white text-slate-600 text-lg font-bold flex items-center justify-center hover:bg-amani-blue hover:text-white hover:border-amani-blue transition-all"

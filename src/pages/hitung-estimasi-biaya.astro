@@ -1,0 +1,157 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import Navbar from "@/components/base/Navbar.astro";
+import CategoryTabs from "@/components/calculator/CategoryTabs.vue";
+import ServiceGrid from "@/components/calculator/ServiceGrid.vue";
+import CartSidebar from "@/components/calculator/CartSidebar.vue";
+import MobileCart from "@/components/calculator/MobileCart.vue";
+import BranchModal from "@/components/calculator/BranchModal.vue";
+import Footer from "@/components/base/Footer.astro";
+import {BadgePercent, BadgePercent, Clipboard, Truck, Weight, Zap} from "@lucide/astro";
+
+const title = "Hitung Estimasi Biaya Laundry";
+const description =
+  "Pilih layanan yang anda inginkan, tentukan jumlahnya, dan langsung dapatkan estimasi harga total Anda.";
+---
+
+<MainLayout title={title} description={description}>
+  <Navbar currentPage="hitung" />
+  <main>
+    <header
+      class="mt-18 bg-linear-to-br from-amani-blue-dark via-amani-blue to-blue-700 relative overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 opacity-10"
+        style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"
+      >
+      </div>
+      <div class="max-w-7xl mx-auto px-6 py-16 text-center relative z-10">
+        <h1
+          class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-4"
+        >
+          Hitung Estimasi<br />
+          <span class="text-amani-yellow"> Biaya Laundry </span>
+        </h1>
+        <p
+          class="text-base sm:text-lg text-white/80 leading-relaxed max-w-2xl mx-auto"
+        >
+          {description}
+        </p>
+      </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 relative z-10">
+      <div
+        class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8"
+      >
+        <div class="flex items-center space-x-3 mb-6">
+          <div
+            class="size-10 bg-linear-to-br from-amani-yellow to-amani-yellow-700 rounded-xl flex items-center justify-center shadow-sm"
+          >
+            <Clipboard class="text-white" />
+          </div>
+          <div>
+            <h2 class="text-lg font-bold text-gray-800">
+              Ketentuan & Informasi Penting
+            </h2>
+            <p class="text-sm text-gray-500">
+              Harap dibaca sebelum melakukan pemesanan
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div
+            class="rule-card flex items-start space-x-4 bg-gray-50 rounded-xl p-4 border border-gray-100"
+          >
+            <div
+              class="size-10 bg-amani-blue rounded-full flex items-center justify-center shrink-0"
+            >
+              <Zap class="text-white" />
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-800 text-base mb-1">
+                Biaya Tambahan Express & Kilat
+              </h4>
+              <p class="text-sm text-gray-500 leading-relaxed">
+                Untuk layanan Express dan Kilat, terdapat biaya tambahan untuk
+                semua jenis laundry sesuai ketentuan yang berlaku.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="rule-card flex items-start space-x-4 bg-gray-50 rounded-xl p-4 border border-gray-100"
+          >
+            <div
+              class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center shrink-0"
+            >
+              <BadgePercent class="text-white" />
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-800 text-base mb-1">
+                Harga Tetap untuk Laundry Murah
+              </h4>
+              <p class="text-sm text-gray-500 leading-relaxed">
+                Untuk laundry dengan harga di bawah atau sama dengan Rp 1.000,
+                harga tidak dipengaruhi oleh jenis layanan apapun.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="rule-card flex items-start space-x-4 bg-gray-50 rounded-xl p-4 border border-gray-100"
+          >
+            <div
+              class="w-10 h-10 bg-amani-blue-light rounded-full flex items-center justify-center shrink-0"
+            >
+              <Truck class="text-white" />
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-800 text-base mb-1">
+                Gratis Antar Jemput ≤ 3 KM
+              </h4>
+              <p class="text-sm text-gray-500 leading-relaxed">
+                Gratis biaya antar jemput untuk jarak di bawah atau sama dengan
+                3 KM. Di luar itu, dikenakan biaya tambahan Rp 5.000 untuk
+                setiap 1 KM.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="rule-card flex items-start space-x-4 bg-gray-50 rounded-xl p-4 border border-gray-100"
+          >
+            <div
+              class="w-10 h-10 bg-amani-yellow rounded-full flex items-center justify-center shrink-0"
+            >
+              <Weight class="text-white" />
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-800 text-base mb-1">
+                Minimal Order 1 KG
+              </h4>
+              <p class="text-sm text-gray-500 leading-relaxed">
+                Minimal pemesanan untuk layanan kiloan adalah 1 KG. Pastikan
+                total berat laundry Anda memenuhi syarat minimal order.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-10 px-6 max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-[1fr_440px] gap-8">
+        <div>
+          <CategoryTabs client:load />
+          <ServiceGrid client:visible />
+        </div>
+        <CartSidebar client:load />
+      </div>
+    </section>
+  </main>
+  <MobileCart client:load />
+  <BranchModal client:load />
+  <Footer />
+</MainLayout>

@@ -8,7 +8,7 @@ defineProps({
 
 <template>
   <div
-    class="overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all hover:-translate-y-1 hover:shadow-2xl hover:shadow-amani-blue/10"
+    class="rounded-2xl border border-slate-200 bg-white transition-all hover:-translate-y-1 hover:shadow-2xl hover:shadow-amani-blue/10"
   >
     <div
       class="relative h-52 overflow-hidden bg-linear-to-br from-indigo-100 to-blue-100"
@@ -20,17 +20,17 @@ defineProps({
         onerror="this.style.display = &quot;none&quot;"
       />
       <div
-        class="absolute top-4 left-4 rounded-full bg-amani-yellow px-3.5 py-1.5 text-xs font-bold text-amani-blue-dark"
+        class="absolute top-4 left-4 rounded-full bg-amani-yellow px-3.5 py-1.5 text-sm font-bold text-amani-blue-dark"
       >
         {{ post.categoryLabel }}
       </div>
     </div>
     <div class="p-6">
-      <div class="mb-2 text-xs text-slate-500">{{ post.date }}</div>
-      <h3 class="mb-2.5 text-base leading-snug font-bold text-slate-800">
+      <div class="mb-2 text-xs text-slate-600">{{ post.date }}</div>
+      <h3 class="mb-2.5 text-lg leading-snug font-bold text-slate-800">
         {{ post.title }}
       </h3>
-      <p class="mb-4 text-sm leading-relaxed text-slate-500">{{ post.excerpt }}</p>
+      <p class="mb-4 text-base leading-relaxed text-slate-600">{{ post.excerpt }}</p>
       <div class="flex gap-3">
         <a
           :href="`/blogs/${post.slug}`"

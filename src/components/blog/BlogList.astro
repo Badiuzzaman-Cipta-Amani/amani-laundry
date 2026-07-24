@@ -4,25 +4,28 @@ import { getCollection } from 'astro:content';
 
 const entries = await getCollection('blogs');
 
-const posts = entries.map((e) => ({
-  slug: e.id,
-  title: e.data.title,
-  excerpt: e.data.excerpt,
-  image: e.data.cover,
-  category: e.data.category,
-  categoryLabel:
-    e.data.category === 'tips'
-      ? 'Tips'
-      : e.data.category === 'promo'
-      ? 'Promo'
-      : 'Info',
-  date: new Date(e.data.date).toLocaleDateString('id-ID', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  }),
-  year: String(new Date(e.data.date).getFullYear()),
-}));
+const posts = entries
+  .map((e) => ({
+    slug: e.id,
+    author: e.data.author,
+    title: e.data.title,
+    excerpt: e.data.excerpt,
+    image: e.data.cover,
+    category: e.data.category,
+    categoryLabel:
+      e.data.category === 'tips'
+        ? 'Tips'
+        : e.data.category === 'promo'
+        ? 'Promo'
+        : 'Info',
+    date: new Date(e.data.date).toLocaleDateString('id-ID', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    }),
+    year: String(new Date(e.data.date).getFullYear()),
+  }))
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 ---
 
 <div>

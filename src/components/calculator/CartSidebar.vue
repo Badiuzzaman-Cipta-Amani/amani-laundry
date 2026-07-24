@@ -1,5 +1,5 @@
 <script setup>
-import { ScrollText, ShoppingBasket, Trash } from "@lucide/vue"
+import { Info, ScrollText, ShoppingBasket, Trash } from "@lucide/vue"
 import { WhatsAppIcon } from "vue3-simple-icons"
 
 import { calculatorStore } from "@/stores/calculator"
@@ -23,8 +23,10 @@ const store = calculatorStore
         </div>
         <div class="p-6">
           <div v-if="store.cartItems.length === 0" class="py-12 text-center">
-            <div class="mb-3 text-4xl"><ShoppingBasket class="size-10 mx-auto" /></div>
-            <p class="text-base text-slate-500 font-bold">Belum ada laundry yang dipilih</p>
+            <div class="mb-3 text-4xl"><ShoppingBasket class="mx-auto size-10" /></div>
+            <p class="text-base font-bold text-slate-500">
+              Belum ada laundry yang dipilih
+            </p>
             <p class="mt-1 text-sm text-slate-400">
               Klik gambar layanan untuk menambahkan
             </p>
@@ -130,21 +132,9 @@ const store = calculatorStore
           </div>
 
           <div class="mt-4 flex items-start gap-2 rounded-xl bg-blue-50 p-3">
-            <svg
-              class="mt-0.5 h-4 w-4 shrink-0 text-amani-blue"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-            <p class="text-xs leading-relaxed text-slate-600">
-              Harga belum termasuk biaya antar jemput. Biaya pengiriman akan dihitung saat
+            <Info class="size-14 text-amani-blue self-center" />
+            <p class="text-sm leading-relaxed text-slate-600">
+              Harga <span class="font-bold">belum termasuk biaya antar jemput</span> apabila melebihi 3 KM. Biaya pengiriman akan dihitung saat
               pemesanan.
             </p>
           </div>

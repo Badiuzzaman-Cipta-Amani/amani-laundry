@@ -8,10 +8,10 @@ defineProps({
 
 <template>
   <div
-    class="rounded-2xl border border-slate-200 bg-white transition-all hover:-translate-y-1 hover:shadow-2xl hover:shadow-amani-blue/10"
+    class="rounded-2xl border border-slate-200 bg-white transition-all hover:shadow-2xl hover:shadow-amani-blue/10"
   >
     <div
-      class="relative h-52 overflow-hidden bg-linear-to-br from-indigo-100 to-blue-100"
+      class="relative h-52 overflow-hidden rounded-t-2xl bg-linear-to-br from-indigo-100 to-blue-100"
     >
       <img
         :src="post.image"
@@ -26,10 +26,18 @@ defineProps({
       </div>
     </div>
     <div class="p-6">
-      <div class="mb-2 text-xs text-slate-600">{{ post.date }}</div>
-      <h3 class="mb-2.5 text-lg leading-snug font-bold text-slate-800">
-        {{ post.title }}
-      </h3>
+      <div class="mb-2 flex items-center gap-2 text-xs text-slate-600">
+        <div class="">Oleh {{ post.author }}</div>
+        <span class="text-[5px]">⬤</span>
+        <div>{{ post.date }}</div>
+      </div>
+      <a :href="`/blogs/${post.slug}`">
+        <h3
+          class="mb-2.5 text-lg leading-snug font-bold text-slate-800 hover:text-amani-blue"
+        >
+          {{ post.title }}
+        </h3>
+      </a>
       <p class="mb-4 text-base leading-relaxed text-slate-600">{{ post.excerpt }}</p>
       <div class="flex gap-3">
         <a

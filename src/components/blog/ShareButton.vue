@@ -57,7 +57,7 @@ const shareTo = (
       </slot>
     </button>
     <div
-      class="share-dropdown absolute top-full left-0 z-50 mt-2 min-w-45 rounded-xl border border-slate-200 bg-white p-2 shadow-xl"
+      class="share-dropdown absolute top-full left-0 z-55 mt-2 min-w-45 rounded-xl border border-slate-200 bg-white p-2 shadow-xl"
       :class="{ active: shareDropdown }"
     >
       <button

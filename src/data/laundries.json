@@ -1,0 +1,583 @@
+[
+  {
+    "name": "Cuci & Setrika Kiloan",
+    "icon": "👕",
+    "items": [
+      {
+        "id": "ck",
+        "name": "Cuci Kiloan",
+        "icon": "🧺",
+        "description": "Cuci pakaian dengan setrika per kilogram",
+        "note": "Laundry hanya mencakup pakaian biasa (kaos, kemeja, celana). Untuk dalaman, kaos kaki, gaun, dll, bisa dilihat di menu harga satuan di bawah.",
+        "price": 6000,
+        "unit": "kg",
+        "bgClass": "bg-blue-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20photo%20of%20laundry%20washing%20clothes%20in%20a%20laundry%20shop?width=400&height=300&nologo=true&seed=1"
+      },
+      {
+        "id": "sk",
+        "name": "Setrika Kiloan",
+        "icon": "🔥",
+        "description": "Setrika pakaian per kilogram",
+        "note": "Laundry hanya mencakup pakaian biasa (kaos, kemeja, celana). Untuk dalaman, kaos kaki, gaun, dll, bisa dilihat di menu harga satuan di bawah.",
+        "price": 5000,
+        "unit": "kg",
+        "bgClass": "bg-yellow-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20photo%20of%20a%20person%20ironing%20clothes%20with%20an%20iron?width=400&height=300&nologo=true&seed=2"
+      },
+      {
+        "id": "dry",
+        "name": "Cuci Kering",
+        "icon": "🌬️",
+        "description": "Cuci pakaian tanpa setrika per kilogram",
+        "note": "Laundry hanya mencakup pakaian biasa (kaos, kemeja, celana). Untuk dalaman, kaos kaki, gaun, dll, bisa dilihat di menu harga satuan di bawah.",
+        "price": 5000,
+        "unit": "kg",
+        "bgClass": "bg-green-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20photo%20of%20professional%20dry%20cleaning%20clothes?width=400&height=300&nologo=true&seed=3"
+      }
+    ]
+  },
+  {
+    "name": "Selimut",
+    "icon": "🛏️",
+    "items": [
+      {
+        "id": "selimut_m",
+        "name": "Selimut M",
+        "icon": "🛏️",
+        "description": "Selimut untuk ukuran single",
+        "note": "",
+        "price": 15000,
+        "unit": "pcs",
+        "bgClass": "bg-blue-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20single%20size%20blanket%20on%20a%20bed?width=400&height=300&nologo=true&seed=4"
+      },
+      {
+        "id": "selimut_l",
+        "name": "Selimut L",
+        "icon": "🛏️",
+        "description": "Selimut untuk ukuran double",
+        "note": "",
+        "price": 18000,
+        "unit": "pcs",
+        "bgClass": "bg-green-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20double%20size%20blanket%20on%20a%20bed?width=400&height=300&nologo=true&seed=5"
+      },
+      {
+        "id": "selimut_xl",
+        "name": "Selimut XL",
+        "icon": "🛏️",
+        "description": "Selimut untuk ukuran queen",
+        "note": "",
+        "price": 20000,
+        "unit": "pcs",
+        "bgClass": "bg-yellow-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20queen%20size%20blanket%20on%20a%20bed?width=400&height=300&nologo=true&seed=6"
+      },
+      {
+        "id": "selimut_xxl",
+        "name": "Selimut XXL",
+        "icon": "🛏️",
+        "description": "Selimut untuk ukuran king",
+        "note": "",
+        "price": 25000,
+        "unit": "pcs",
+        "bgClass": "bg-orange-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20king%20size%20blanket%20on%20a%20bed?width=400&height=300&nologo=true&seed=7"
+      }
+    ]
+  },
+  {
+    "name": "Bedcover",
+    "icon": "🛌",
+    "items": [
+      {
+        "id": "bed_m",
+        "name": "Bedcover M",
+        "icon": "🛌",
+        "description": "Bedcover untuk ukuran double",
+        "note": "",
+        "price": 18000,
+        "unit": "pcs",
+        "bgClass": "bg-blue-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20medium%20size%20bedcover%20on%20a%20bed?width=400&height=300&nologo=true&seed=8"
+      },
+      {
+        "id": "bed_l",
+        "name": "Bedcover L",
+        "icon": "🛌",
+        "description": "Bedcover untuk ukuran queen",
+        "note": "",
+        "price": 20000,
+        "unit": "pcs",
+        "bgClass": "bg-green-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20queen%20size%20bedcover%20on%20a%20bed?width=400&height=300&nologo=true&seed=9"
+      },
+      {
+        "id": "bed_xl",
+        "name": "Bedcover XL",
+        "icon": "🛌",
+        "description": "Bedcover untuk ukuran king",
+        "note": "",
+        "price": 25000,
+        "unit": "pcs",
+        "bgClass": "bg-yellow-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20king%20size%20bedcover%20on%20a%20bed?width=400&height=300&nologo=true&seed=10"
+      }
+    ]
+  },
+  {
+    "name": "Boneka",
+    "icon": "🧸",
+    "items": [
+      {
+        "id": "boneka_s",
+        "name": "Boneka S",
+        "icon": "🧸",
+        "description": "",
+        "note": "",
+        "price": 5000,
+        "unit": "pcs",
+        "bgClass": "bg-blue-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20photo%20of%20a%20small%20cute%20stuffed%20teddy%20bear?width=400&height=300&nologo=true&seed=11"
+      },
+      {
+        "id": "boneka_m",
+        "name": "Boneka M",
+        "icon": "🧸",
+        "description": "",
+        "note": "",
+        "price": 7000,
+        "unit": "pcs",
+        "bgClass": "bg-green-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20photo%20of%20a%20medium%20cute%20stuffed%20teddy%20bear?width=400&height=300&nologo=true&seed=12"
+      },
+      {
+        "id": "boneka_l",
+        "name": "Boneka L",
+        "icon": "🧸",
+        "description": "",
+        "note": "",
+        "price": 10000,
+        "unit": "pcs",
+        "bgClass": "bg-yellow-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20photo%20of%20a%20large%20stuffed%20animal%20toy?width=400&height=300&nologo=true&seed=13"
+      },
+      {
+        "id": "boneka_xl",
+        "name": "Boneka XL",
+        "icon": "🧸",
+        "description": "",
+        "note": "",
+        "price": 15000,
+        "unit": "pcs",
+        "bgClass": "bg-orange-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20photo%20of%20an%20extra%20large%20stuffed%20plush%20toy?width=400&height=300&nologo=true&seed=14"
+      },
+      {
+        "id": "boneka_xxl",
+        "name": "Boneka XXL",
+        "icon": "🧸",
+        "description": "",
+        "note": "",
+        "price": 25000,
+        "unit": "pcs",
+        "bgClass": "bg-red-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20photo%20of%20a%20very%20large%20stuffed%20teddy%20bear?width=400&height=300&nologo=true&seed=15"
+      },
+      {
+        "id": "boneka_jumbo",
+        "name": "Boneka Jumbo",
+        "icon": "🧸",
+        "description": "",
+        "note": "",
+        "price": 30000,
+        "unit": "pcs",
+        "bgClass": "bg-purple-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20photo%20of%20a%20jumbo%20stuffed%20animal%20toy?width=400&height=300&nologo=true&seed=16"
+      }
+    ]
+  },
+  {
+    "name": "Bantal",
+    "icon": "🛌",
+    "items": [
+      {
+        "id": "bantal_reg",
+        "name": "Bantal",
+        "icon": "🛌",
+        "description": "",
+        "note": "",
+        "price": 20000,
+        "unit": "pcs",
+        "bgClass": "bg-blue-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20standard%20bed%20pillow?width=400&height=300&nologo=true&seed=17"
+      },
+      {
+        "id": "bantal_guling",
+        "name": "Bantal Guling Kecil",
+        "icon": "🛌",
+        "description": "",
+        "note": "",
+        "price": 10000,
+        "unit": "pcs",
+        "bgClass": "bg-green-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20small%20bolster%20pillow?width=400&height=300&nologo=true&seed=18"
+      },
+      {
+        "id": "bantal_bayi",
+        "name": "Bantal Bayi",
+        "icon": "🛌",
+        "description": "",
+        "note": "",
+        "price": 15000,
+        "unit": "pcs",
+        "bgClass": "bg-yellow-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20soft%20baby%20pillow?width=400&height=300&nologo=true&seed=19"
+      }
+    ]
+  },
+  {
+    "name": "Harga Satuan",
+    "icon": "🧾",
+    "items": [
+      {
+        "id": "hs_handuk",
+        "name": "Handuk",
+        "icon": "🧖",
+        "description": "",
+        "note": "",
+        "price": 3000,
+        "unit": "pcs",
+        "bgClass": "bg-blue-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20bath%20towel?width=400&height=300&nologo=true&seed=20"
+      },
+      {
+        "id": "hs_handuk_kecil",
+        "name": "Handuk Kecil",
+        "icon": "🧖",
+        "description": "",
+        "note": "",
+        "price": 2000,
+        "unit": "pcs",
+        "bgClass": "bg-green-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20small%20hand%20towel?width=400&height=300&nologo=true&seed=21"
+      },
+      {
+        "id": "hs_kaos_kaki",
+        "name": "Kaos Kaki",
+        "icon": "🧦",
+        "description": "",
+        "note": "Kaos kaki dihitung per satuan, tidak per pasang",
+        "price": 500,
+        "unit": "pcs",
+        "bgClass": "bg-yellow-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20pair%20of%20socks?width=400&height=300&nologo=true&seed=22"
+      },
+      {
+        "id": "hs_dalaman",
+        "name": "Dalaman",
+        "icon": "👕",
+        "description": "",
+        "note": "",
+        "price": 500,
+        "unit": "pcs",
+        "bgClass": "bg-orange-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20an%20undershirt%20and%20underwear?width=400&height=300&nologo=true&seed=23"
+      },
+      {
+        "id": "hs_ciput",
+        "name": "Ciput",
+        "icon": "🧕",
+        "description": "",
+        "note": "",
+        "price": 500,
+        "unit": "pcs",
+        "bgClass": "bg-red-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20ciput%20inner%20hijab%20cap?width=400&height=300&nologo=true&seed=24"
+      },
+      {
+        "id": "hs_jaket_dewasa",
+        "name": "Jaket Dewasa",
+        "icon": "🧥",
+        "description": "",
+        "note": "",
+        "price": 4000,
+        "unit": "pcs",
+        "bgClass": "bg-purple-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20an%20adult%20jacket?width=400&height=300&nologo=true&seed=25"
+      },
+      {
+        "id": "hs_jaket_anak",
+        "name": "Jaket Anak",
+        "icon": "🧥",
+        "description": "",
+        "note": "",
+        "price": 2000,
+        "unit": "pcs",
+        "bgClass": "bg-pink-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20child%20jacket?width=400&height=300&nologo=true&seed=26"
+      },
+      {
+        "id": "hs_sprei",
+        "name": "Sprei 1 Set",
+        "icon": "🛏️",
+        "description": "Per set",
+        "note": "",
+        "price": 10000,
+        "unit": "set",
+        "bgClass": "bg-teal-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20complete%20bed%20sheet%20set?width=400&height=300&nologo=true&seed=27"
+      },
+      {
+        "id": "hs_tas_kecil",
+        "name": "Tas Kecil (Dompet)",
+        "icon": "👜",
+        "description": "",
+        "note": "",
+        "price": 5000,
+        "unit": "pcs",
+        "bgClass": "bg-indigo-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20small%20handbag%20purse?width=400&height=300&nologo=true&seed=28"
+      },
+      {
+        "id": "hs_tas_besar",
+        "name": "Tas Besar",
+        "icon": "🎒",
+        "description": "",
+        "note": "",
+        "price": 10000,
+        "unit": "pcs",
+        "bgClass": "bg-blue-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20large%20backpack?width=400&height=300&nologo=true&seed=29"
+      },
+      {
+        "id": "hs_tas_gunung",
+        "name": "Tas Gunung",
+        "icon": "🎒",
+        "description": "",
+        "note": "",
+        "price": 5000,
+        "unit": "pcs",
+        "bgClass": "bg-green-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20large%20hiking%20backpack?width=400&height=300&nologo=true&seed=30"
+      },
+      {
+        "id": "hs_sajadah_tipis",
+        "name": "Sajadah Tipis",
+        "icon": "🕌",
+        "description": "",
+        "note": "",
+        "price": 5000,
+        "unit": "pcs",
+        "bgClass": "bg-yellow-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20thin%20Islamic%20prayer%20rug?width=400&height=300&nologo=true&seed=31"
+      },
+      {
+        "id": "hs_sajadah_tebal",
+        "name": "Sajadah Tebal",
+        "icon": "🕌",
+        "description": "",
+        "note": "",
+        "price": 7000,
+        "unit": "pcs",
+        "bgClass": "bg-orange-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20thick%20Islamic%20prayer%20rug?width=400&height=300&nologo=true&seed=32"
+      },
+      {
+        "id": "hs_penutup_kepala",
+        "name": "Penutup Kepala",
+        "icon": "🧕",
+        "description": "",
+        "note": "",
+        "price": 3000,
+        "unit": "pcs",
+        "bgClass": "bg-red-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20head%20covering%20scarf?width=400&height=300&nologo=true&seed=33"
+      },
+      {
+        "id": "hs_sandal",
+        "name": "Sandal",
+        "icon": "🩴",
+        "description": "",
+        "note": "Sandal dihitung per pasang",
+        "price": 10000,
+        "unit": "pcs",
+        "bgClass": "bg-purple-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20pair%20of%20sandals?width=400&height=300&nologo=true&seed=34"
+      },
+      {
+        "id": "hs_sarung_bantal",
+        "name": "Sarung Bantal/Guling",
+        "icon": "🛌",
+        "description": "",
+        "note": "",
+        "price": 1000,
+        "unit": "pcs",
+        "bgClass": "bg-pink-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20pillowcase%20and%20bolster%20case?width=400&height=300&nologo=true&seed=35"
+      },
+      {
+        "id": "hs_keset",
+        "name": "Keset",
+        "icon": "🧹",
+        "description": "",
+        "note": "",
+        "price": 4000,
+        "unit": "pcs",
+        "bgClass": "bg-teal-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20floor%20doormat?width=400&height=300&nologo=true&seed=36"
+      },
+      {
+        "id": "hs_jas",
+        "name": "Cuci Jas",
+        "icon": "🤵",
+        "description": "",
+        "note": "",
+        "price": 25000,
+        "unit": "pcs",
+        "bgClass": "bg-indigo-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20formal%20business%20suit%20and%20blazer?width=400&height=300&nologo=true&seed=37"
+      },
+      {
+        "id": "hs_helm_dewasa",
+        "name": "Cuci Helm Dewasa",
+        "icon": "⛑️",
+        "description": "",
+        "note": "",
+        "price": 20000,
+        "unit": "pcs",
+        "bgClass": "bg-blue-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20an%20adult%20motorcycle%20helmet?width=400&height=300&nologo=true&seed=38"
+      },
+      {
+        "id": "hs_helm_kecil",
+        "name": "Cuci Helm Kecil",
+        "icon": "⛑️",
+        "description": "",
+        "note": "",
+        "price": 15000,
+        "unit": "pcs",
+        "bgClass": "bg-green-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20small%20child%20helmet?width=400&height=300&nologo=true&seed=39"
+      },
+      {
+        "id": "hs_gaun_balita",
+        "name": "Cuci Gaun Balita",
+        "icon": "👗",
+        "description": "",
+        "note": "",
+        "price": 10000,
+        "unit": "pcs",
+        "bgClass": "bg-yellow-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20toddler%20girls%20dress?width=400&height=300&nologo=true&seed=40"
+      },
+      {
+        "id": "hs_gaun_anak",
+        "name": "Cuci Gaun Anak",
+        "icon": "👗",
+        "description": "",
+        "note": "",
+        "price": 15000,
+        "unit": "pcs",
+        "bgClass": "bg-orange-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20childrens%20dress?width=400&height=300&nologo=true&seed=41"
+      },
+      {
+        "id": "hs_gaun_dewasa",
+        "name": "Cuci Gaun Dewasa",
+        "icon": "👗",
+        "description": "",
+        "note": "",
+        "price": 25000,
+        "unit": "pcs",
+        "bgClass": "bg-red-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20an%20adult%20womens%20dress?width=400&height=300&nologo=true&seed=42"
+      },
+      {
+        "id": "hs_sarung_tangan",
+        "name": "Sarung Tangan",
+        "icon": "🧤",
+        "description": "",
+        "note": "Sarung tangan dihitung per satuan, tidak per pasang",
+        "price": 4000,
+        "unit": "pcs",
+        "bgClass": "bg-purple-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20pair%20of%20gloves?width=400&height=300&nologo=true&seed=43"
+      },
+      {
+        "id": "hs_sarung",
+        "name": "Sarung",
+        "icon": "🧕",
+        "description": "",
+        "note": "",
+        "price": 5000,
+        "unit": "pcs",
+        "bgClass": "bg-pink-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20an%20Indonesian%20sarong%20cloth?width=400&height=300&nologo=true&seed=44"
+      },
+      {
+        "id": "hs_mukena",
+        "name": "Mukena",
+        "icon": "🕌",
+        "description": "",
+        "note": "",
+        "price": 5000,
+        "unit": "pcs",
+        "bgClass": "bg-teal-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20white%20Muslim%20prayer%20outfit%20mukena?width=400&height=300&nologo=true&seed=45"
+      },
+      {
+        "id": "hs_taplak",
+        "name": "Taplak Meja",
+        "icon": "🍽️",
+        "description": "",
+        "note": "",
+        "price": 7000,
+        "unit": "pcs",
+        "bgClass": "bg-indigo-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20dining%20tablecloth?width=400&height=300&nologo=true&seed=46"
+      },
+      {
+        "id": "hs_jaket_tebal",
+        "name": "Jaket Tebal",
+        "icon": "🧥",
+        "description": "",
+        "note": "",
+        "price": 7000,
+        "unit": "pcs",
+        "bgClass": "bg-blue-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20thick%20winter%20jacket%20coat?width=400&height=300&nologo=true&seed=47"
+      },
+      {
+        "id": "hs_hipseat",
+        "name": "Hipseat Bayi",
+        "icon": "👶",
+        "description": "",
+        "note": "",
+        "price": 15000,
+        "unit": "pcs",
+        "bgClass": "bg-green-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20product%20photo%20of%20a%20baby%20hipseat%20carrier?width=400&height=300&nologo=true&seed=48"
+      }
+    ]
+  },
+  {
+    "name": "Tambahan",
+    "icon": "➕",
+    "items": [
+      {
+        "id": "add_noda",
+        "name": "Anti Noda",
+        "icon": "✨",
+        "description": "",
+        "note": "Untuk layanan yang dihitung per KG, harap hitung mandiri jumlah itemnya.",
+        "price": 4000,
+        "unit": "item",
+        "bgClass": "bg-blue-100",
+        "image": "https://image.pollinations.ai/prompt/realistic%20photo%20of%20stain%20removal%20cleaning%20clothes?width=400&height=300&nologo=true&seed=49"
+      }
+    ]
+  }
+]

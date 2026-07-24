@@ -7,7 +7,7 @@ import CartSidebar from "@/components/calculator/CartSidebar.vue";
 import MobileCart from "@/components/calculator/MobileCart.vue";
 import BranchModal from "@/components/calculator/BranchModal.vue";
 import Footer from "@/components/base/Footer.astro";
-import { BadgePercent, Clipboard, Truck, Weight, Zap } from "@lucide/astro";
+import { OctagonX, Clipboard, Truck, Weight, Zap } from "@lucide/astro";
 
 const title = "Hitung Estimasi Biaya Laundry";
 const description =
@@ -75,26 +75,7 @@ const description =
               </h4>
               <p class="text-sm text-gray-500 leading-relaxed">
                 Untuk layanan Express dan Kilat, terdapat biaya tambahan untuk
-                semua jenis laundry sesuai ketentuan yang berlaku.
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="rule-card flex items-start space-x-4 bg-gray-50 rounded-xl p-4 border border-gray-100"
-          >
-            <div
-              class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center shrink-0"
-            >
-              <BadgePercent class="text-white" />
-            </div>
-            <div>
-              <h4 class="font-bold text-gray-800 text-base mb-1">
-                Harga Tetap untuk Laundry Murah
-              </h4>
-              <p class="text-sm text-gray-500 leading-relaxed">
-                Untuk laundry dengan harga di bawah atau sama dengan Rp 1.000,
-                harga tidak dipengaruhi oleh jenis layanan apapun.
+                semua jenis laundry sesuai ketentuan yang berlaku, <strong>kecuali</strong> untuk laundry dengan harga Rp1.000 atau di bawah itu.
               </p>
             </div>
           </div>
@@ -109,12 +90,30 @@ const description =
             </div>
             <div>
               <h4 class="font-bold text-gray-800 text-base mb-1">
-                Gratis Antar Jemput ≤ 3 KM
+                Gratis Antar Jemput maksimal 3 KM
               </h4>
               <p class="text-sm text-gray-500 leading-relaxed">
                 Gratis biaya antar jemput untuk jarak di bawah atau sama dengan
                 3 KM. Di luar itu, dikenakan biaya tambahan Rp 5.000 untuk
-                setiap 1 KM.
+                setiap jarak 1 M - 1 KM.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="rule-card flex items-start space-x-4 bg-gray-50 rounded-xl p-4 border border-gray-100"
+          >
+            <div
+              class="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center shrink-0"
+            >
+              <OctagonX class="text-white" />
+            </div>
+            <div>
+              <h4 class="font-bold text-gray-800 text-base mb-1">
+                Perhitungan estimasi tidak termasuk biaya antar jemput
+              </h4>
+              <p class="text-sm text-gray-500 leading-relaxed">
+                Aplikasi ini <strong>tidak</strong> menghitung biaya antar jemput yang melebihi 3 KM. Perhitungan tersebut akan dilakukan oleh Customer Service di cabang Amani Laundry.
               </p>
             </div>
           </div>

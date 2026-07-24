@@ -1,3 +1,9 @@
+<script setup>
+import calcCategories from '@/data/laundries.json';
+import ServiceCard from './ServiceCard.vue';
+</script>
+
+
 <template>
   <div>
     <div v-for="cat in calcCategories" :key="cat.name" class="mb-12">
@@ -16,8 +22,3 @@
     </div>
   </div>
 </template>
-
-<script setup>
-import calcCategories from '@/data/calculatorItems.json';
-import ServiceCard from './ServiceCard.vue';
-</script>

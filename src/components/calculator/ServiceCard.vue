@@ -15,7 +15,7 @@ const store = calculatorStore;
     :class="(store.quantities[item.id] || 0) > 0 ? 'selected' : 'hover:shadow-xl hover:shadow-amani-blue/5 hover:border-slate-300'"
     @click="store.updateQty(item.id, 1)"
   >
-    <div class="relative h-40 overflow-hidden bg-slate-100">
+    <!-- <div class="relative h-40 overflow-hidden bg-slate-100">
       <img :src="item.image" :alt="item.name" class="card-image w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.classList.add('flex','items-center','justify-center','bg-linear-to-br','from-slate-100','to-slate-200')">
       <div v-if="!item.image" class="absolute inset-0 flex items-center justify-center text-4xl">{{ item.icon }}</div>
 
@@ -26,19 +26,13 @@ const store = calculatorStore;
       <div v-if="(store.quantities[item.id] || 0) > 0" class="absolute top-3 right-3 size-7 bg-amani-blue text-white rounded-full flex items-center justify-center text-[11px] font-bold shadow-lg">
         {{ store.formatQty(store.quantities[item.id]) }}
       </div>
-    </div>
+    </div> -->
 
     <div class="p-4">
       <div class="flex items-start justify-between mb-2">
         <div>
-          <div class="flex items-center gap-1">
-            <h4 class="text-base font-bold text-slate-800">{{ item.name }}</h4>
-            <div v-if="item.id === 'dry'" class="info-popup">
-              ℹ️
-              <span class="info-popup-text">Cuci Kering (Dry Cleaning) menggunakan pelarut khusus tanpa air, ideal untuk pakaian sensitif seperti jas, kebaya, dan bahan premium.</span>
-            </div>
-          </div>
-          <p class="text-[13px] text-slate-500 mt-0.5">{{ item.note }}</p>
+          <h4 class="text-base font-bold text-slate-800">{{ item.name }}</h4>
+          <p v-if="item.description" class="text-[13px] text-slate-500 mt-0.5">{{ item.description }}</p>
         </div>
       </div>
 
@@ -51,8 +45,9 @@ const store = calculatorStore;
         +{{ store.formatPrice(store.getSurcharge(item)) }} {{ store.selectedCategory === 'express' ? 'Express' : 'Kilat' }}
       </div>
 
-      <div v-if="item.id === 'add_noda'" class="mb-3 text-[10px] text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-2.5 py-1.5 leading-tight">
-        <strong>Catatan:</strong> Untuk layanan yang dihitung per KG, harap hitung mandiri jumlah itemnya.
+      <div v-if="item.note" class="mb-3 text-[13px] text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-2.5 py-1.5 leading-tight">
+        <strong>Catatan:</strong><br />
+        <div class="mt-1">{{ item.note }}</div>
       </div>
 
       <QuantityControl :item="item" />

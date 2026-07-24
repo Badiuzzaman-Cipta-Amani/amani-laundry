@@ -1,6 +1,6 @@
 import { reactive } from "vue"
 
-import calculatorItems from "@/data/calculatorItems.json"
+import calculatorItems from "@/data/laundries.json"
 import { branches } from "@/data/common.json"
 
 function findItemById(id) {

@@ -1,9 +1,13 @@
 ---
 import "@/styles/main.css";
+import WhatsAppFloat from "@/components/base/WhatsAppFloat.astro";
+import { Schema } from "astro-seo-schema";
+import type { Graph } from 'schema-dts';
 
 type Props = {
   title: string;
   description: string;
+  jsonLd: Graph;
   canonicalUrl?: string;
   ogImage?: string;
 };
@@ -11,11 +15,11 @@ type Props = {
 const {
   title = "Amani Laundry",
   description,
+  jsonLd,
   canonicalUrl = Astro.site?.href,
   ogImage = "/logo.svg",
 } = Astro.props;
 
-import WhatsAppFloat from "@/components/base/WhatsAppFloat.astro";
 ---
 
 <!doctype html>
@@ -58,6 +62,7 @@ import WhatsAppFloat from "@/components/base/WhatsAppFloat.astro";
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    {jsonLd && <Schema item={jsonLd} />}
     <style is:global>
       body {
         font-family: "Inter", sans-serif;
